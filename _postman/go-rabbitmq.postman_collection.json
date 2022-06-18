@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "768940ae-2702-4a00-a983-a630ce1110a0",
+		"name": "go-rabbitmq-example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19713083"
+	},
+	"item": [
+		{
+			"name": "order service health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/order/health"
+			},
+			"response": []
+		},
+		{
+			"name": "create order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Iphone 13 mini\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/order/"
+			},
+			"response": []
+		}
+	]
+}
